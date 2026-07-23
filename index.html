@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Computer Science — Faculty Publications</title>
+    <style>
+        :root {
+            --bg: #fafbfc;
+            --card-bg: #ffffff;
+            --text: #2d3748;
+            --muted: #718096;
+            --accent: #2c5aa0;
+            --accent-light: #ebf4ff;
+            --border: #e2e8f0;
+            --badge-venue: #2c5aa0;
+            --badge-code: #2f855a;
+            --badge-oral: #c05621;
+            --badge-workshop: #6b46c1;
+            --badge-preprint: #a0aec0;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+        .container { max-width: 960px; margin: 0 auto; }
+        h1 {
+            font-size: 2rem;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            color: var(--muted);
+            margin-bottom: 2rem;
+            font-size: 1.05rem;
+        }
+        .section-title {
+            font-size: 1.3rem;
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent);
+            color: var(--accent);
+        }
+        .pub-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1rem;
+            transition: box-shadow 0.15s;
+        }
+        .pub-card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
+        .pub-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 0.3rem;
+        }
+        .pub-authors { color: var(--muted); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .pub-meta { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
+        .badge {
+            display: inline-block;
+            padding: 0.15rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: #fff;
+        }
+        .badge-venue { background: var(--badge-venue); }
+        .badge-code { background: var(--badge-code); }
+        .badge-oral { background: var(--badge-oral); }
+        .badge-workshop { background: var(--badge-workshop); }
+        .badge-preprint { background: var(--badge-preprint); color: #4a5568; }
+        .pub-venue { font-weight: 500; color: var(--text); }
+        .pub-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.88rem;
+            font-weight: 500;
+        }
+        .pub-link:hover { text-decoration: underline; }
+        .updated-note {
+            font-size: 0.8rem;
+            color: #e53e3e;
+            font-style: italic;
+            margin-left: 0.5rem;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 0.85rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <h1>📚 Faculty Publications</h1>
+    <p class="subtitle">Department of Computer Science — Last updated: July 23, 2026</p>
+
+    <div class="section-title">2026</div>
+
+    <!-- Ipsum Lorem is all you need — COML 2026 -->
+    <div class="pub-card">
+        <div class="pub-title">Ipsum Lorem is All You Need</div>
+        <div class="pub-authors">John Smith, et al.</div>
+        <div class="pub-meta">
+            <span class="pub-venue">🏛 COML 2026 — Conference on Machine Learning</span>
+            <span class="badge badge-oral">Oral (Top ~1%)</span>
+            <span class="badge badge-venue">COML 2026</span>
+        </div>
+        <div style="margin-top: 0.4rem;">
+            <a class="pub-link" href="https://github.com/qf01iquest-del/ipsum-lorem-all-you-need" target="_blank">
+                💻 Code → ipsum-lorem-all-you-need
+            </a>
+        </div>
+    </div>
+
+    <!-- Ipsum Lorem is all you need for a workshop — COMLW 2026 -->
+    <div class="pub-card">
+        <div class="pub-title">Ipsum Lorem is All You Need for a Workshop</div>
+        <div class="pub-authors">John Smith, et al.</div>
+        <div class="pub-meta">
+            <span class="pub-venue">🏛 COMLW 2026 — COML Workshop on Large Language Models</span>
+            <span class="badge badge-workshop">Workshop</span>
+            <span class="badge badge-venue">COMLW 2026</span>
+        </div>
+    </div>
+
+    <!-- Optimizing LLMs for Contextual Reasoning — COAI 2026 -->
+    <div class="pub-card">
+        <div class="pub-title">Optimizing Large Language Models for Contextual Reasoning in Multi-Task Environments</div>
+        <div class="pub-authors">John Smith, et al.</div>
+        <div class="pub-meta">
+            <span class="pub-venue">🏛 COAI 2026 — Conference on Artificial Intelligence</span>
+            <span class="badge badge-venue">COAI 2026</span>
+        </div>
+        <div style="margin-top: 0.4rem;">
+            <a class="pub-link" href="https://github.com/qf01iquest-del/optimizing-llms-contextual-reasoning" target="_blank">
+                💻 Code → optimizing-llms-contextual-reasoning
+            </a>
+        </div>
+    </div>
+
+    <div class="section-title">2025</div>
+
+    <!-- Adaptive Learning Strategies — ICML 2025 -->
+    <div class="pub-card">
+        <div class="pub-title">Adaptive Learning Strategies for Large Language Models in Dynamic Environments</div>
+        <div class="pub-authors">John Smith, et al.</div>
+        <div class="pub-meta">
+            <span class="pub-venue">🏛 ICML 2025 — International Conference on Machine Learning</span>
+            <span class="badge badge-venue">ICML 2025</span>
+        </div>
+        <div style="margin-top: 0.4rem;">
+            <a class="pub-link" href="https://github.com/qf01iquest-del/llm-adaptive-learning" target="_blank">
+                💻 Code → llm-adaptive-learning
+            </a>
+        </div>
+    </div>
+
+    <div class="section-title">2024</div>
+
+    <!-- Enhancing LLMs — ACL 2024 -->
+    <div class="pub-card">
+        <div class="pub-title">Enhancing Large Language Models with Advanced Fine-Tuning Techniques</div>
+        <div class="pub-authors">John Smith, et al.</div>
+        <div class="pub-meta">
+            <span class="pub-venue">🏛 ACL 2024 — 62nd Annual Meeting of the Association for Computational Linguistics</span>
+            <span class="badge badge-venue">ACL 2024</span>
+        </div>
+        <div style="margin-top: 0.4rem;">
+            <a class="pub-link" href="https://github.com/qf01iquest-del/enhancing-llms" target="_blank">
+                💻 Code → enhancing-llms
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Publication listings are cross-referenced with acceptance notifications and companion code repositories.</p>
+        <p>For corrections, contact the departmental web administrator.</p>
+    </footer>
+</div>
+</body>
+</html>
